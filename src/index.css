@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  /*
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  height: 300px;
+  width: 414px;
+}
+
+/*
+OBS delete this
+*/
+#buttons-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#main-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+#main-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/*
+S-Header
+*/
+#main-header-container {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 412px;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 3;
+}
+
+.go-back-button {
+  margin-left: 25px;
+  font-size: 28px;
+  color: lightslategray;
+}
+
+#go-back-link {
+  color: lightgray;
+  text-decoration: none;
+}
+
+#header-page-name {
+  font-size: 23px;
+  color: lightgray;
+}
+
+#header-link-nav{
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#header-link-nav:hover{
+  cursor: pointer;
+}
+
+#header-links-container {
+  width: 90px;
+  height: calc(100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  z-index: 3;
+  margin-left: 324px;
+  background-color: whitesmoke;
+  top: 55px;
+}
+
+.header-link{
+  text-decoration: none;
+  color: black;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-link:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+/*
+E-Header
+*/
+
+
+/*
+S-Home
+*/
+#home-page-container {
+  margin-top: 80px;
+  height: calc(100vh - 80px);
+  width: 414px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#home-content-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#brand {
+  margin-top: 70px;
+  font-size: 50px;
+}
+
+.on-off-container:hover{
+  cursor: pointer;
+}
+
+#app-info-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#app-info-header {
+  font-size: 21px;
+}
+
+.link-home {
+  text-decoration: none;
+  color: lightgray;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.link-home:hover {
+  color: black;
+}
+
+#app-info-data {
+  font-size: 22px;
+  color: black;
+}
+
+.on-off-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch-text{
+  font-size: 12px;
+  color: lightskyblue;
+}
+
+#switch-on{
+  color: lightgray;
+}
+
+#switch-off{
+  color: lightskyblue;
+}
+/*
+E-Home
+*/
+
+/*
+S-Users
+*/
+#users-page-container {
+  height: 100%;
+  margin-top: 80px;
+}
+
+#main-users-container {
+  width: 414px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+S-Users/User
+*/
+.main-user-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  border-bottom: solid 1px lightblue;
+}
+
+.pna-wrapper {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: gray;
+}
+
+.mini-pic {
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+}
+
+.na-span {
+  margin-left: 15px;
+}
+
+.see-profile-span {
+  margin-right: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: lightgray;
+  font-size: 25px;
+  height: auto;
+}
+
+.see-profile-span:hover{
+  cursor: pointer;
+}
+/*
+E-Users/User
+*/
+
+/*
+E-Users
+*/
+
+/*
+S-UserPage
+*/
+#userpage-page-container{
+  position: relative;
+  margin-top: 80px;
+  width: 414px;
+}
+
+#userpage-ppn-wrapper{
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  align-items: center;
+  border-bottom: solid lightblue 1px;
+  background-color: white;
+  width: 414px;
+}
+
+#pp-pic{
+  margin-left: 15px;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+}
+
+#userpage-name-wrapper{
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#userpage-name-header-span{
+  font-size: 12px;
+  color: lightslategray;
+}
+
+#userpage-name-span{
+  font-size: 14px;
+  font-weight: bold;
+  color: lightskyblue
+}
+
+#userpage-nat-span{
+  margin-left: 10px;
+}
+
+.leaflet-container {
+  height: 200px;
+  width: 414px;
+}
+
+.pin-icon {
+  color: lightcoral;
+}
+
+#marker-span{
+  width: 20px;
+  height: 20px;
+}
+
+#map-container{
+  width: 100%;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+}
+
+#user-info-container {
+  z-index: 2;
+  position: relative;
+  margin-top: -60px;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  border-top: solid 1px lightblue;
+  display: flex;
+  flex-direction: row;
+}
+
+#gender-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#male-icon {
+  color: lightskyblue;
+  font-size: 32px;
+}
+
+#female-icon {
+  color: lightskyblue;
+  font-size: 32px;
+}
+
+#age-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#age-span{
+  font-size: 20px;
+  color: lightslategray;
+}
+
+
+#address-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-top: lightblue 1px solid;
+}
+
+#userpage-address-header-span {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: lightslategray;
+  margin-left: 20px;
+}
+
+#address-line-container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.address-line {
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+#contact-container {
+  border-top: lightblue 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#userpage-contact-header-span {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: lightslategray;
+  margin-left: 20px;
+}
+
+#contact-line-container{
+  margin-top: 2px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-line {
+  margin-left: 20px;
+  margin-bottom: 6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contact-text{
+  margin-left: 6px;
+  font-size: 14px;
+}
+
+/*
+E-UserPage
+*/
+
+/*
+//iPhone 5/SE 320x568
+//iPhone 6/7/8 375x667
+//iPhone 6/7/8 Plus 414x736
+//iPhone X 375x812
+//iPad 768x1024
+//iPad Pro 1024x1366
+*/
+
+/*
+iPhone 5/SE
+*/
+@media(max-width: 320px) {
+  #main-header-container{
+    width: 320px;
+  }
+
+  #header-links-container{
+    margin-left: 223px;
+  }
+
+  #home-page-container{
+    width: 320px;
+  }
+
+  #main-users-container{
+    width: 320px;
+  }
+
+  #userpage-page-container{
+    width: 320px;
+  }
+
+  #userpage-ppn-wrapper{
+    width: 320px;
+  }
+
+  #map-container{
+    width: 100%;
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*
+iPhone 6/7/8
+*/
+@media(max-width: 375px) and (min-width : 321px) {
+  #main-header-container{
+    width: 375px;
+  }
+
+  #header-links-container{
+    margin-left: 278px;
+  }
+
+  #home-page-container{
+    width: 375px;
+  }
+
+  #main-users-container{
+    width: 375px;
+  }
+
+  #userpage-page-container{
+    width: 375px;
+  }
+  
+  #userpage-ppn-wrapper{
+    width: 375px;
+  }
+}
+
+
+
+
+
